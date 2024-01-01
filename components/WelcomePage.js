@@ -1,17 +1,20 @@
 import HeroSection from "./HeroSection";
-import Projects from "./Projects";
 import ContactUs from "./ContactUs";
-import SocialMediaProfiles from "./SocialMediaProfiles";
-import {ProductDescription} from "./ProductDetail";
+import Products from "./Products";
+import { Services } from "./Services";
+import Footer from "./Footer"
+
 
 
 function WelcomePage() {
     return (
         <>
             <HeroSection />
-            <SocialMediaProfiles />
-            <Projects />
+            <Products/>
+            <Services/>
+            <Footer/>
             <ContactUs />
+
         </>
     );
 }

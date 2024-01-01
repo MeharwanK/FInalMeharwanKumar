@@ -1,27 +1,25 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import React from "react";
-import {Link} from "react-router-dom";
-
-function Header() {
+import "./Header.css"
+import contact from "./../assets/images/user.svg"
+import shopping from "./../assets/images/shopping.svg"
+import menu from "./../assets/images/menu.svg"
+export default function Header() {
     return (
-        <Navbar expand="lg" className="bg-dark text-white">
-            <Container>
-                <Navbar.Brand className={"text-white"}> <Link style={{textDecoration: 'none'}} className={"text-white"} to={"/"}> Fahad. </Link></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-nav bar-nav text-white" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link className={"text-white"}> <Link style={{textDecoration: 'none'}} className={"text-white"} to={"/all-projects"}> Projects </Link></Nav.Link>
-                        <Nav.Link className={"text-white"} href="#link">Reviews</Nav.Link>
-                        <Nav.Link className={"text-white"} href="#link">Social Media Profiles</Nav.Link>
-                        <Nav.Link className={"text-white"}> <Link style={{textDecoration: 'none'}} className={"text-white"} to={"/products"}> Products </Link></Nav.Link>
-                        <Nav.Link className={"text-white"} href="#link">Contact Us</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <div className="nav container">
+        <div class="logo-title">
+        <h1>Grace</h1>
+      </div>
+  
+      <div class="menu">
+        <a href="#" class="active">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">CONTACT US</a>
+      </div>
+  
+      <div class="icons">
+        <img src={contact} alt="" />
+        <img src={shopping} alt="Icon 2" />
+        <img src={menu} alt="Icon 2" />
+      </div>
+        </div>
     );
 }
-
-export default Header;

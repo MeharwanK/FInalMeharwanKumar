@@ -8,12 +8,5 @@ export const APIs = {
                 GET_SINGLE_PRODUCT: `${BASE_URL_SERVER}/products`
             },
             CART: {},
-        },
-        PORTFOLIO: {
-            REVIEWS: {
-                GET_ALL_REVIEWS: `${BASE_URL_SERVER_FAHAD}/api/reviews`
-            }
-        },
-
-        USERS: {}
+        }
 }
